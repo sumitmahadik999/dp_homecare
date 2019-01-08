@@ -3,7 +3,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-size: 16px;
     font-weight: 400;
-    color: #747474;
+    color: #2e424e;
     line-height: 1;
     width: unset;
 }
@@ -161,52 +161,6 @@ background-image: linear-gradient(to bottom right, #6DF0E3 0%, #88CBE9 55%, #A1A
     padding: 0;
     box-shadow: none;
 }
-.choose-option-container {
-    padding: 2rem 0 3rem;
-}
-
-.option-cards {
-    background: #f7f7f7;
-    padding: 160px 10px 20px;
-    height: 240px;
-}
-
-.choose-option-container .button {
-    border: 0;
-    border-radius: 0;
-    background: #90bd31;
-    color: #fff;
-    font-size: 1rem;
-    cursor: pointer;
-    margin-bottom: 20px;
-    padding: 0.8rem 1rem;
-    box-shadow: 0px 2px 3px 0px rgba(119, 119, 119, 0.6);
-    -moz-box-shadow: 0px 2px 3px 0px rgba(119, 119, 119, 0.6);
-    -webkit-box-shadow: 0px 2px 3px 0px rgba(119, 119, 119, 0.6);
-}
-
-.card-title {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
-
-}
-
-.vc-card {
-    background: url(../img/vc_icon.png) 50% 60px #f7f7f7 no-repeat;
-}
-
-.bo-card {
-    background: url(../img/bo_icon.png) 50% 60px #f7f7f7 no-repeat;
-}
-
-.wc-card {
-    background: url(../img/wc_icon.png) 50% 60px #f7f7f7 no-repeat;
-}
-
-.dc-card {
-    background: url(../img/dc_icon.png) 50% 60px #f7f7f7 no-repeat;
-}
-
 .why-doc-container {
     /* IE10+ */ 
 background-image: -ms-linear-gradient(top left, #6DF0E3 0%, #88CBE9 55%, #A1A8F0 100%);
@@ -250,21 +204,6 @@ background-image: linear-gradient(to bottom right, #6DF0E3 0%, #88CBE9 55%, #A1A
     font-size: 0.9rem;
 }
 
-.current-testimonial {
-    position: relative;
-    width: 100%;
-    margin: 50px auto 90px;
-}
-
-.current-testimonial p {
-    padding: 0 45px;
-    line-height: 1.3rem;
-}
-
-.current-testimonial .fas {
-    color: #3785c7;
-}
-
 /*.feature:nth-child(1) img {
     margin-left: 50px;
 }
@@ -291,15 +230,20 @@ background-image: linear-gradient(to bottom right, #6DF0E3 0%, #88CBE9 55%, #A1A
 }
 .tab-desc {
     font-weight: 300;
+    line-height: 1.2rem;
 }
 
 .artilce-container {
     padding: 60px 0;
 }
-
-.artilce-container .title {
+.artilce-container.services-container .title {
     margin: 0 auto 60px;
 }
+
+.artilce-container .title {
+    margin: 0 auto 110px;
+}
+
 .article {
     margin-bottom: 20px;
     background: #fff;
@@ -310,6 +254,7 @@ background-image: linear-gradient(to bottom right, #6DF0E3 0%, #88CBE9 55%, #A1A
 
 .article:hover {
     color: #fff;
+    z-index: 9;
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .article p.service-title {
@@ -321,19 +266,26 @@ background-image: linear-gradient(to bottom right, #6DF0E3 0%, #88CBE9 55%, #A1A
 }
 
 .article p.article-title {
-    color: #fff;
-    font-size: 1.4rem;
-    position: absolute;
-    margin: -70px 20px 0;
+    color: #ee697c;
+    font-size: 1rem;
     line-height: 1.7rem;
+    text-transform: uppercase;
+    min-height: 60px;
+    margin-bottom: 0;
 }
 
 .article-description {
     padding: 15px 0;
 }
 
-.article:hover .article-description {
-    background: #06c9c3;
+.article:hover .article-description, .article:hover p.article-title  {
+    color: #fff;
+     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fbc7c5+0,fbc7c5+22,ee697c+100 */
+background: #fbc7c5; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #fbc7c5 0%, #fbc7c5 22%, #ee697c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #fbc7c5 0%,#fbc7c5 22%,#ee697c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #fbc7c5 0%,#fbc7c5 22%,#ee697c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbc7c5', endColorstr='#ee697c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     padding: 15px;
 }
 
@@ -354,7 +306,39 @@ background-image: linear-gradient(to bottom right, #6DF0E3 0%, #88CBE9 55%, #A1A
     line-height: 1.2rem;
     margin-bottom: 10px;
 }
-
+.current-testimonial {
+    background: #fff;
+    padding: 40px;
+    margin: 40px 0 60px;
+        box-shadow: 0px 2px 3px 0px rgba(119, 119, 119, 0.6);
+    -moz-box-shadow: 0px 2px 3px 0px rgba(119, 119, 119, 0.6);
+    -webkit-box-shadow: 0px 2px 3px 0px rgba(119, 119, 119, 0.6);
+}
+.user-name {
+    font-size: 1.1rem;
+    margin: 20px 0 5px;
+    font-weight: 500;
+}
+.timespan {
+    font-size: 0.9rem;
+}
+.testimonial-top {
+    margin: 20px 40px;
+    border-bottom: 1px solid #e7e7e7;
+    padding: 0 0 20px;
+}
+.testimonial-top p {
+    color: #747474;
+    line-height: 1.1rem;
+}
+.testimonial-bottom {
+    margin: 0px 40px;
+}
+.feedabck-label {
+        min-width: 120px;
+    display: inline-block;
+    line-height: 31px;
+}
 .sitemap-container {
     /* IE10+ */ 
 background-image: -ms-linear-gradient(top left, #6DF0E3 0%, #88CBE9 55%, #A1A8F0 100%);
@@ -430,22 +414,6 @@ background-image: linear-gradient(to bottom, #FCE1E5 0%, #FDEEEF 55%, #fef3f3 10
     line-height: 1.3rem;
 }
 
-.testimonial {
-    width: 65%;
-    height: auto;
-    padding: 20px 20px;
-    color: #fff;
-    font-weight: 300;
-    line-height: 1.4rem;
-    position: relative;
-    margin: -175px 0 10px 35%;
-}
-
-.testimonial p {
-    padding: 0 10px;
-    font-size: 0.8rem;
-}
-
 .pink-bg {
     background: #d02652;
     opacity: 0.8;
@@ -465,18 +433,6 @@ background-image: linear-gradient(to bottom, #FCE1E5 0%, #FDEEEF 55%, #fef3f3 10
     position: absolute;
     right: 20px;
     margin-top: -30px;
-}
-
-.testimonial2 {
-    margin: -275px 0 10px 35%;
-}
-
-.testimonial3 {
-    margin: -275px 0 10px 0px;
-}
-
-.testimonial4 {
-    margin: -127px 0 10px 0px;
 }
 
 .newsletter-container {
@@ -724,12 +680,6 @@ background-image: linear-gradient(to bottom, #FCE1E5 0%, #FDEEEF 55%, #fef3f3 10
         font-size: 2.6rem;
     }
 
-    .current-testimonial {
-        position: relative;
-        width: 350px;
-        margin: 50px auto 90px;
-    }
-
     .title {
         font-size: 2.4rem;
         padding-bottom: 15px;
@@ -818,12 +768,6 @@ background-image: linear-gradient(to bottom, #FCE1E5 0%, #FDEEEF 55%, #fef3f3 10
 
     .banner-header h2 {
         font-size: 2.6rem;
-    }
-
-    .current-testimonial {
-        position: relative;
-        width: 350px;
-        margin: 50px auto 90px;
     }
 
     .title {
@@ -1264,25 +1208,31 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbc7c5', end
 }
 
 .carousel-inner {
-    height: 335px;
+    height: 365px;
 }
 
 #carouselExample .carousel-control-prev {
-    width: auto;
-    left: -40px;
+   width: auto;
+    left: 45%;
+    opacity: 1;
+    align-items: flex-end;
+    margin-bottom: -30px;
 }
 
 #carouselExample .carousel-control-prev .carousel-control-prev-icon {
-    background-image: url("../img/carosel-left.png");
+    background-image: url("../img/arrow-left-01.svg");
 }
 
 #carouselExample .carousel-control-next {
     width: auto;
-    right: -40px;
+    right: 45%;
+    opacity: 1;
+    align-items: flex-end;
+    margin-bottom: -30px;
 }
 
 #carouselExample .carousel-control-next .carousel-control-next-icon {
-    background-image: url("../img/carousel-right.png");
+    background-image: url("../img/arrow-right-01.svg");
 }
 
 @media (min-width: 768px) {
