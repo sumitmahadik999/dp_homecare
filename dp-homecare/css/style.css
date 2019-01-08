@@ -67,7 +67,12 @@ body {
 }
 
 .primary-button {
-    background: #ee697c;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fbc7c5+0,fbc7c5+22,ee697c+100 */
+background: #fbc7c5; /* Old browsers */
+background: -moz-linear-gradient(-45deg, #fbc7c5 0%, #fbc7c5 22%, #ee697c 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(-45deg, #fbc7c5 0%,#fbc7c5 22%,#ee697c 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(135deg, #fbc7c5 0%,#fbc7c5 22%,#ee697c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbc7c5', endColorstr='#ee697c',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */                                                           
     border: 1px solid #ee697c;
     text-transform: uppercase;
 }
@@ -323,9 +328,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbc7c5', end
     font-size: 0.9rem;
 }
 .testimonial-top {
-    margin: 20px 40px;
+    margin: 20px 40px 35px;
     border-bottom: 1px solid #e7e7e7;
-    padding: 0 0 20px;
+    padding: 0 0 35px;
 }
 .testimonial-top p {
     color: #747474;
@@ -337,8 +342,39 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbc7c5', end
 .feedabck-label {
         min-width: 120px;
     display: inline-block;
-    line-height: 31px;
 }
+.margin-b-20 {
+    margin-bottom: 20px;
+}
+
+#carouselExample1 .user-name {
+    
+    margin: 10px 0 0;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #747474;
+    display: inline-block; 
+}
+.sticker {
+        position: absolute;
+    left: -90px;
+    top: -90px;
+}
+.current-testimonial-container {
+    position: relative;
+}
+.arrow-down {
+      width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-top: 15px solid #fff;
+    bottom: 45px;
+    position: absolute;
+    left: 295px;
+}
+
+
 .sitemap-container {
     /* IE10+ */ 
 background-image: -ms-linear-gradient(top left, #6DF0E3 0%, #88CBE9 55%, #A1A8F0 100%);
@@ -365,7 +401,7 @@ background-image: linear-gradient(to bottom right, #6DF0E3 0%, #88CBE9 55%, #A1A
 }
 
 .border-top {
-    border-top: 1px solid #778e8f !important;
+    border-top: 1px solid #9ad4ed !important;
 }
 
 .pad-bot-25 {
@@ -484,7 +520,7 @@ background-image: linear-gradient(to bottom, #FCE1E5 0%, #FDEEEF 55%, #fef3f3 10
 }
 
 .border-right {
-    border-right: 1px solid #778e8f !important;
+    border-right: 1px solid #9ad4ed !important;
 }
 
 .footer-head {
@@ -621,7 +657,8 @@ background-image: linear-gradient(to bottom, #FCE1E5 0%, #FDEEEF 55%, #fef3f3 10
 
     .newsletter-container {
         background: url("../img/images/desktop/subscibe.png") 50% 0 no-repeat #f4fcfc;
-        margin-top: 20px
+        margin-top: 20px;
+        padding-top: 70px;
     }
 
     .Subscribe-div {
@@ -1201,13 +1238,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbc7c5', end
 }
 
 .active-testimonial .panel {
-    background: #fff;
-    -webkit-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.4);
-    -moz-box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.4);
-    box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.4);
 }
 
-.carousel-inner {
+#carouselExample .carousel-inner {
     height: 365px;
 }
 
@@ -1219,7 +1252,8 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbc7c5', end
     margin-bottom: -30px;
 }
 
-#carouselExample .carousel-control-prev .carousel-control-prev-icon {
+#carouselExample .carousel-control-prev .carousel-control-prev-icon,
+#carouselExample1 .carousel-control-prev .carousel-control-prev-icon {
     background-image: url("../img/arrow-left-01.svg");
 }
 
@@ -1231,8 +1265,17 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fbc7c5', end
     margin-bottom: -30px;
 }
 
-#carouselExample .carousel-control-next .carousel-control-next-icon {
+#carouselExample .carousel-control-next .carousel-control-next-icon,
+#carouselExample1 .carousel-control-next .carousel-control-next-icon {
     background-image: url("../img/arrow-right-01.svg");
+}
+
+#carouselExample1 .carousel-control-prev {
+    left: -150px;
+}
+
+#carouselExample1 .carousel-control-next {
+    right: -150px;
 }
 
 @media (min-width: 768px) {
