@@ -75,11 +75,10 @@
             </ol>
         </nav>
     </div>
-
     <div class="wrapper">
         <div class="services-tab-container">
             <div class="row clearfix relative-pos">
-                <div class="col-md-8">
+                <div class="col-md-8 service-tabs">
                     <nav>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
                             <a class="nav-item nav-link active" id="nav-ec-tab" data-toggle="tab" href=".nav-ec" role="tab" aria-controls="nav-ec" aria-selected="true">Elderly Care</a>
@@ -97,45 +96,105 @@
                 </div>
                 <div class="floating-form col-md-4">
                     <div class="form-header">
-                        <a class="col">ENQUIRE</a> 
-                        <a class="col">BOOK NOW</a>               
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <a class="nav-item nav-link active" id="nav-enq-tab" data-toggle="tab" href="#nav-enq" role="tab" aria-controls="nav-enq" aria-selected="true">ENQUIRE</a>
+                                <a class="nav-item nav-link" id="nav-bkn-tab" data-toggle="tab" href="#nav-bkn" role="tab" aria-controls="nav-bkn" aria-selected="true">BOOK NOW</a>
+                            </div>
+                        </nav>
                     </div>
                     <div class="form-field-container callback-form">
-                        <form>
-                        <div class="form-group">
-                                <label for="services">Services</label>
-                                <select class="form-control" id="services">
-                                    <option>Elderly Care</option>
-                                    <option>Baby Care</option>
-                                    <option>Nursing Care</option>
-                                    <option>Long Term Care</option>
-                                    <option>Care giver Service</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="">
-                            </div>
-                            <div class="form-group">
-                                <label for="services">Relationship with Patient</label>
-                                <select class="form-control" id="services">
-                                    <option>Self</option>
-                                    <option>Son/Daughter</option>
-                                    <option>Spouse</option>
-                                    <option>Father/Mother</option>
-                                    <option>Brother/Sister</option>
-                                </select>
-                            </div>
-                            <div class="form-group">
-                                <label for="phone">Phone</label>
-                                <input type="text" class="form-control" id="phone" placeholder="+91 9876543210">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" class="form-control" id="email" placeholder="name@email.com">
-                            </div>
-                            <button class="col button secondary-button roboto-medium">SEND ME QUATATION</button>
-                        </form>
+                        <div class="tab-content" id="nav-tabContent1">
+                            <form id="nav-enq" class="tab-pane fade show active" id="nav-enq" role="tabpanel" aria-labelledby="nav-enq-tab">
+                                <div class="form-group">
+                                    <label for="services">Services</label>
+                                    <select class="form-control" id="services">
+                                        <option>Elderly Care</option>
+                                        <option>Baby Care</option>
+                                        <option>Nursing Care</option>
+                                        <option>Long Term Care</option>
+                                        <option>Care giver Service</option>
+                                    </select>
+                                </div>
+                                <div class="form-group date-container row">
+                                    <div class="col-md-6">
+                                        <label for="name">Starts from</label>
+                                        <!-- <div class="quesadilla"> -->
+                                        <input type="date" class='form-control date'>
+                                        <i class="calendar-icon"></i>
+                                        <!--  </div> -->
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="name">End the service</label>
+                                        <!-- <div class="quesadilla"> -->
+                                        <input type="date" class='form-control date'>
+                                        <!--  </div> -->
+                                    </div>
+                                    <div class="custom-control custom-radio margin-l-15 margin-t-10">
+                                        <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                                        <label class="custom-control-label" for="customRadio1">Dont have exact dates</label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="services">Relationship with Patient</label>
+                                    <select class="form-control" id="services">
+                                        <option>Self</option>
+                                        <option>Son/Daughter</option>
+                                        <option>Spouse</option>
+                                        <option>Father/Mother</option>
+                                        <option>Brother/Sister</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="+91 9876543210">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="name@email.com">
+                                </div>
+                                <button class="col button secondary-button roboto-medium">SEND ME QUATATION</button>
+                            </form>
+                            <form id="nav-bkn" class="tab-pane fade" id="nav-bkn" role="tabpanel" aria-labelledby="nav-bkn-tab">
+                                <div class="form-group">
+                                    <label for="services">Services</label>
+                                    <select class="form-control" id="services">
+                                        <option>Elderly Care</option>
+                                        <option>Baby Care</option>
+                                        <option>Nursing Care</option>
+                                        <option>Long Term Care</option>
+                                        <option>Care giver Service</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="name">Name</label>
+                                    <input type="text" class="form-control" id="name" placeholder="">
+                                </div>
+                                <div class="form-group">
+                                    <label for="services">Relationship with Patient</label>
+                                    <select class="form-control" id="services">
+                                        <option>Self</option>
+                                        <option>Son/Daughter</option>
+                                        <option>Spouse</option>
+                                        <option>Father/Mother</option>
+                                        <option>Brother/Sister</option>
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Phone</label>
+                                    <input type="text" class="form-control" id="phone" placeholder="+91 9876543210">
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" class="form-control" id="email" placeholder="name@email.com">
+                                </div>
+                                <button class="col button secondary-button roboto-medium">SEND ME QUATATION</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -217,36 +276,35 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="image-div">
-                                      <img class="mx-auto d-block" width="236" src="img/Services/testimonial.png" alt="slide 1">
-                                      <span class="user-name">JOY</span><br />
-                                      <span class="feedback-ratings"><img src="img/star.svg" width="21" alt="star"> <img src="img/star.svg" width="21" alt="star"> <img src="img/star.svg" width="21" alt="star"> <img src="img/star.svg" width="21" alt="star"> <img src="img/star.svg" width="21" alt="star"></span>
-                                  </div>
+                                        <img class="mx-auto d-block" width="236" src="img/Services/testimonial.png" alt="slide 1">
+                                        <span class="user-name">JOY</span><br />
+                                        <span class="feedback-ratings"><img src="img/star.svg" width="21" alt="star"> <img src="img/star.svg" width="21" alt="star"> <img src="img/star.svg" width="21" alt="star"> <img src="img/star.svg" width="21" alt="star"> <img src="img/star.svg" width="21" alt="star"></span>
+                                    </div>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="text-container">
-                                    <i class="fas fa-quote-left"></i>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus. Quis ipsum suspendisse ultrices gravida…</p>
-                                    <i class="fas fa-quote-right"></i>
-                                </div>
+                                        <i class="fas fa-quote-left"></i>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus. Quis ipsum suspendisse ultrices gravida…</p>
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        
                         <div class="carousel-item " data-index="1">
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="image-div">
-                                      <img class="mx-auto d-block" width="236" src="img/Services/testimonial.png" alt="slide 1">
-                                      <span class="user-name">JOY</span><br />
-                                      <span class="feedback-ratings"><img src="img/star.svg" width="21" alt="star"> <img src="img/star.svg" width="21" alt="star"> <img src="img/star.svg" width="21" alt="star"> <img src="img/star.svg" width="21" alt="star"> <img src="img/star.svg" width="21" alt="star"></span>
-                                  </div>
+                                        <img class="mx-auto d-block" width="236" src="img/Services/testimonial.png" alt="slide 1">
+                                        <span class="user-name">JOY</span><br />
+                                        <span class="feedback-ratings"><img src="img/star.svg" width="21" alt="star"> <img src="img/star.svg" width="21" alt="star"> <img src="img/star.svg" width="21" alt="star"> <img src="img/star.svg" width="21" alt="star"> <img src="img/star.svg" width="21" alt="star"></span>
+                                    </div>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="text-container">
-                                    <i class="fas fa-quote-left"></i>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus. Quis ipsum suspendisse ultrices gravida…</p>
-                                    <i class="fas fa-quote-right"></i>
-                                </div>
+                                        <i class="fas fa-quote-left"></i>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus. Quis ipsum suspendisse ultrices gravida…</p>
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -254,17 +312,17 @@
                             <div class="row">
                                 <div class="col-md-4">
                                     <div class="image-div">
-                                      <img class="mx-auto d-block" width="236" src="img/Services/testimonial.png" alt="slide 1">
-                                      <span class="user-name">JOY</span><br />
-                                      <span class="feedback-ratings"><img src="img/star.svg" width="21" alt="star"> <img src="img/star.svg" width="21" alt="star"> <img src="img/star.svg" width="21" alt="star"> <img src="img/star.svg" width="21" alt="star"> <img src="img/star.svg" width="21" alt="star"></span>
-                                  </div>
+                                        <img class="mx-auto d-block" width="236" src="img/Services/testimonial.png" alt="slide 1">
+                                        <span class="user-name">JOY</span><br />
+                                        <span class="feedback-ratings"><img src="img/star.svg" width="21" alt="star"> <img src="img/star.svg" width="21" alt="star"> <img src="img/star.svg" width="21" alt="star"> <img src="img/star.svg" width="21" alt="star"> <img src="img/star.svg" width="21" alt="star"></span>
+                                    </div>
                                 </div>
                                 <div class="col-md-8">
                                     <div class="text-container">
-                                    <i class="fas fa-quote-left"></i>
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus. Quis ipsum suspendisse ultrices gravida…</p>
-                                    <i class="fas fa-quote-right"></i>
-                                </div>
+                                        <i class="fas fa-quote-left"></i>
+                                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus. Quis ipsum suspendisse ultrices gravida…</p>
+                                        <i class="fas fa-quote-right"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
