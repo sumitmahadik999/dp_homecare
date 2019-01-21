@@ -157,48 +157,48 @@
                                     <label for="email">Email</label>
                                     <input type="email" class="form-control" id="email" placeholder="name@email.com">
                                 </div>
-                                <button class="col button secondary-button roboto-medium">SEND ME QUATATION</button>
-                            </form>
-                            <form id="nav-bkn" class="tab-pane fade" id="nav-bkn" role="tabpanel" aria-labelledby="nav-bkn-tab">
                                 <div class="form-group">
-                                    <label for="services">Services</label>
-                                    <select class="form-control" id="services">
-                                        <option>Elderly Care</option>
-                                        <option>Baby Care</option>
-                                        <option>Nursing Care</option>
-                                        <option>Long Term Care</option>
-                                        <option>Care giver Service</option>
-                                    </select>
-                                </div>
+                                    <label for="exampleFormControlTextarea1">Comments</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Provide us with the details of the type of ailment you have"></textarea>
+                                  </div>
                                 <div class="form-group">
-                                    <label for="name">Name</label>
-                                    <input type="text" class="form-control" id="name" placeholder="">
+                                    <div id="drop-area">
+                                        <div class="my-form">
+                                            <p>Upload multiple files with the file dialog or by dragging and dropping images onto the dashed region</p>
+                                            <input type="file" id="fileElem" multiple accept="image/*" onchange="handleFiles(this.files)">
+                                            <label class="button" for="fileElem">Select some files</label>
+                                        </div>
+                                        <progress id="progress-bar" max=100 value=0></progress>
+                                        <div id="gallery" />
+                                    </div>
                                 </div>
-                                <div class="form-group">
-                                    <label for="services">Relationship with Patient</label>
-                                    <select class="form-control" id="services">
-                                        <option>Self</option>
-                                        <option>Son/Daughter</option>
-                                        <option>Spouse</option>
-                                        <option>Father/Mother</option>
-                                        <option>Brother/Sister</option>
-                                    </select>
-                                </div>
-                                <div class="form-group">
-                                    <label for="phone">Phone</label>
-                                    <input type="text" class="form-control" id="phone" placeholder="+91 9876543210">
-                                </div>
-                                <div class="form-group">
-                                    <label for="email">Email</label>
-                                    <input type="email" class="form-control" id="email" placeholder="name@email.com">
-                                </div>
-                                <button class="col button secondary-button roboto-medium">SEND ME QUATATION</button>
-                            </form>
                         </div>
+                        <button class="col button secondary-button roboto-medium">SEND ME QUATATION</button>
+                        </form>
+                        <form id="nav-bkn" class="tab-pane fade" id="nav-bkn" role="tabpanel" aria-labelledby="nav-bkn-tab">
+                            <div class="alice-div">
+                                <img src="img/Services/Alice.png" alt="Ask Alice" />
+                            </div>
+                            <div class="ask-expert">
+                                <h2>ASK ALICE</h2>
+                                <p>SENIOR ADVISOR</p>
+                            </div>
+                            <h3>GOT A QUESTION? <BR/>ASK OUR RESIDENT EXPERT!</h3>
+                             <div class="form-group">
+                                    <label for="exampleFormControlTextarea1">Comments</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="2" placeholder="Provide us with the details of the type of ailment you have"></textarea>
+                                  </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" class="form-control" id="email" placeholder="name@email.com">
+                            </div>
+                            <button class="col button secondary-button roboto-medium">ASK NOW</button>
+                        </form>
                     </div>
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <div class="benefit-container">
         <div class="wrapper">
@@ -436,6 +436,7 @@
         <script src="js/bootstrap.min.js"></script>
         <script src="js/bootstrap-swipe-carousel.js"></script>
         <script src="js/slider.js"></script>
+        <script src="js/drag-drop-upload.js"></script>
         <script type="text/javascript">
         const carouselEl1 = $('#carouselExample1');
 

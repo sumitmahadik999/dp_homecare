@@ -886,6 +886,55 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#FABEBE', end
 .margin-t-10 {
     margin-top: 10px;
 }
+
+
+
+
+#drop-area {
+  border: 2px dashed #ccc;
+  border-radius: 20px;
+  width: 100%;
+  margin: 50px auto;
+  padding: 20px;
+}
+#drop-area.highlight {
+  border-color: purple;
+}
+.my-form {
+  margin-bottom: 10px;
+}
+#gallery {
+  margin-top: 10px;
+}
+#gallery img {
+  width: 150px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+#fileElem {
+  display: none;
+}
+
+.alice-div {
+    margin: -20px -20px 0 -20px;
+}
+
+.alice-div img {
+    width: 100%;
+}
+.ask-expert {
+    width: 220px;
+    margin: 0 auto;
+    text-align: center;
+    background: #eae836;
+    color: #000;
+    border-radius: 15px;
+    margin-top: -40px;
+    /* z-index: 99999999999; */
+    position: relative;
+    padding: 10px 0 1px;
+}
 @media (max-width: 374px) {
     .quick-connect-conainer .btn-secondary {
         margin: 10px 0;
